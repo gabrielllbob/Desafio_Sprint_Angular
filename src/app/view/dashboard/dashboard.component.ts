@@ -1,0 +1,15 @@
+import { Component } from '@angular/core';
+import { MenuHamburguerComponent } from '../../components/menu-hamburguer/menu-hamburguer.component';
+import { VehicleComponent } from '../../components/vehicle/vehicle.component';
+import { VehicleDadosComponent } from '../../components/vehicle-dados/vehicle-dados.component';
+
+@Component({
+  selector: 'app-dashboard',
+  standalone: true,
+  imports: [MenuHamburguerComponent, VehicleComponent, VehicleDadosComponent],
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css']
+})
+export class DashboardComponent {
+
+}
