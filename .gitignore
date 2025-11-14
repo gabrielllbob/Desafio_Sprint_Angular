@@ -42,5 +42,4 @@ testem.log
 Thumbs.db
 
 # API
-/public/api.js
-/public/img/
+/api/

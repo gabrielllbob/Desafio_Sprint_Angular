@@ -1,0 +1,17 @@
+main {
+    display: flex;
+}
+
+.section__login {
+    background-color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 13%;
+}
+
+.section__login h3 {
+    color: green;
+}
