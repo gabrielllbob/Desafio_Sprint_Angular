@@ -64,3 +64,9 @@
     background-color: blue;
     border-color: blue;
 }
+
+@media (max-width: 767px) {
+    .section__login__formulario {
+        width: 100%;
+    }
+}

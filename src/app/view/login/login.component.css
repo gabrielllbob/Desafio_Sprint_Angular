@@ -15,3 +15,15 @@ main {
 .section__login h3 {
     color: green;
 }
+
+@media (max-width: 767px) {
+    main {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section__login {
+        justify-content: start;
+        padding-top: 20%;
+    }
+}

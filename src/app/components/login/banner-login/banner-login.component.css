@@ -4,3 +4,9 @@
     align-items: start;
     opacity: 0.5;
 }
+
+@media (max-width: 767px) {
+    .section__banner {
+        display: none;
+    }
+}
