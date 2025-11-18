@@ -56,12 +56,16 @@
     width: 100%;
   }
 
+  .cards {
+    height: 100vh;
+  }
+
   .quadro {
     margin: 1%;
     width: 40%;
   }
 
   .banner img {
-    width: 75%;
+    width: 75vw;
   }
 }
