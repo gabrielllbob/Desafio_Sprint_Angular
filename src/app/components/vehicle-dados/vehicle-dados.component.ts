@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./vehicle-dados.component.css']
 })
 export class VehicleDadosComponent implements OnInit, OnDestroy {
+  private readonly intervalo = 2000; 
   vin = '';
   vehicleData: any = null;
   errorMessage = '';
@@ -54,7 +55,7 @@ export class VehicleDadosComponent implements OnInit, OnDestroy {
 
   private showTemporaryError(message: string) {
     this.errorMessage = message;
-    setTimeout(() => (this.errorMessage = ''), 5000);
+    setTimeout(() => (this.errorMessage = ''), this.intervalo);
   }
 
   ngOnDestroy() {

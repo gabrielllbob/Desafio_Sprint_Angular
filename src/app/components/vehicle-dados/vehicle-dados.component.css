@@ -1,15 +1,19 @@
 .section__tabela-veiculos {
     background-color: #1b357e;
-    height: 20vh;
+    min-height: 20vh; 
+    padding: 15px;
+    height: auto;
 }
 
 .tabela-veiculos {
     background-color: #1b357e;
+    margin-bottom: 0;
 }
 
-.tabela-veiculos-titulo th{
+.tabela-veiculos-titulo th {
     background-color: #1b357e;
     color: white;
+    white-space: nowrap;
 }
 
 .tabela-veiculos-dados {
@@ -17,6 +21,17 @@
 }
 
 .msgError {
-    position: absolute;
-    top: 77vh;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .section__tabela-veiculos {
+        padding: 10px;
+        height: auto;
+    }
+    
+    #Cod-Vin {
+        font-size: 14px;
+    }
 }
