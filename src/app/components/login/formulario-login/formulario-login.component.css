@@ -56,7 +56,7 @@
 .info {
     position: relative;
     top: 2px;
-    left: 2px;
+    left: 5px;
     color: green;
 }
 
@@ -68,5 +68,12 @@
 @media (max-width: 767px) {
     .section__login__formulario {
         width: 100%;
+    }
+}
+
+@media (max-width: 315px) {
+    #textoAutoLogin {
+        position: relative;
+        left: -10%;
     }
 }
