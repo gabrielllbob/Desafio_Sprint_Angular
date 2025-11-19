@@ -20,3 +20,5 @@ Sinta-se livre para usar e modificar conforme necessário.
 ## 📝 INSTRUÇÕES
 
 Para o funcionamento completo deste projeto, é necessário o uso de uma API compatível, que foi disponibilizada pelos responsáveis pelo curso.
+
+---
