@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { AutenticacaoService } from '../../../services/autenticacao.service';
 import { Router } from '@angular/router';
-import { Login } from '../../../models/login';
 import { FormsModule } from '@angular/forms';
 import { NgIf } from '@angular/common';
+import { Usuario } from '../../../models/usuario.model';
 
 @Component({
   selector: 'app-formulario-login',
@@ -20,7 +20,7 @@ export class FormularioLoginComponent {
   }
   formSubmit() {
     console.log(this.login);
-    this.authService.autenticar(this.login.login, this.login.senha, this.login.lembrar)
+    this.authService.autenticar(this.login.nome, this.login.senha, this.login.lembrar)
       .subscribe({
         next: () => {
           console.log('Usuário autenticado com sucesso!');
@@ -35,9 +35,11 @@ export class FormularioLoginComponent {
   togglePassword() {
     this.login.showPassword = !this.login.showPassword;
   }
-  login: Login = {
-    login: '',
+  login: Usuario = {
+    id: '',
+    nome: '',
     senha: '',
+    email: '',
     lembrar: false,
     showPassword: false
   }

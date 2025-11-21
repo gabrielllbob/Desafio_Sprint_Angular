@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MenuHamburguerComponent } from '../../components/menu-hamburguer/menu-hamburguer.component';
-import { VehicleComponent } from '../../components/vehicle/vehicle.component';
-import { VehicleDadosComponent } from '../../components/vehicle-dados/vehicle-dados.component';
+import { VehicleComponent } from '../../components/dashboard/vehicle/vehicle.component';
+import { VehicleDadosComponent } from '../../components/dashboard/vehicle-dados/vehicle-dados.component';
 
 @Component({
   selector: 'app-dashboard',

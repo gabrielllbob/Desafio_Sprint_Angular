@@ -1,7 +1,7 @@
 import { NgForOf, NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Vehicle } from '../../models/vehicle';
-import { VehicleService } from '../../services/vehicle.service';
+import { VehicleService } from '../../../services/vehicle.service';
+import { Veiculo } from '../../../models/veiculo.model';
 
 @Component({
   selector: 'app-vehicle',
@@ -11,8 +11,8 @@ import { VehicleService } from '../../services/vehicle.service';
   styleUrls: ['./vehicle.component.css']
 })
 export class VehicleComponent implements OnInit {
-  vehicles: Vehicle[] = [];
-  selectedVehicle?: Vehicle;
+  vehicles: Veiculo[] = [];
+  selectedVehicle?: Veiculo;
 
   constructor(private vehicleService: VehicleService) { }
 
